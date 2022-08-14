@@ -1,10 +1,11 @@
 import javax.swing.JOptionPane;
 public class RutinaCatalogos {
-    private OperarioCliente arregloOperarioCliente[] = new OperarioCliente[5];
-    private Vehiculo arregloVehiculo[] = new Vehiculo[5];
-    private Reparacion arregloReparacion[] = new Reparacion[5];
+    final private OperarioCliente arregloOperarioCliente[] = new OperarioCliente[5];
+    final private Vehiculo arregloVehiculo[] = new Vehiculo[5];
+    final private Reparacion arregloReparacion[] = new Reparacion[5];
 
     public void llenarArregloVehiculo() {
+        JOptionPane.showMessageDialog(null,"LLENADO DEL CATALOGO DE VEHICULOS");
         int x;
         for (x = 0; x <arregloVehiculo.length; x++) {
             Vehiculo v = new Vehiculo();
@@ -14,10 +15,12 @@ public class RutinaCatalogos {
             v.setCaracteristicas(JOptionPane.showInputDialog(null, "Digite las caracteristicas del vehiculo #"+(x+1)+": "));
             v.setEstado(JOptionPane.showInputDialog(null, "Digite el estado del Vehiculo #"+(x+1)+": "));
             arregloVehiculo[x] = v;
+
         }
     }
 
     public void llenarArregloOpeCli() {
+        JOptionPane.showMessageDialog(null,"LLENADO DEL CATALOGO DE OPERARIOS / CLIENTES");
         int x;
         for (x = 0; x < arregloOperarioCliente.length; x++) {
             OperarioCliente p = new OperarioCliente();
@@ -33,6 +36,7 @@ public class RutinaCatalogos {
     }
 
     public void llenarArregloReparacion() {
+        JOptionPane.showMessageDialog(null,"LLENADO DEL CATALOGO DE REPARACIONES");
         int x;
         for (x = 0; x < arregloReparacion.length; x++) {
             Reparacion c = new Reparacion();
@@ -42,21 +46,24 @@ public class RutinaCatalogos {
         }
     }
     public void mostrarArregloVehiculo(){
+        JOptionPane.showMessageDialog(null,"CATALOGO DE VEHICULOS");
         int x;
         String s="";
-        for(x=0;x<arregloVehiculo.length;x++){
-            s=s +"VEHICULO #"+(x+1)+"\n\n"
+        for(x=0;x<arregloVehiculo.length;x++,s=""){
+            s=s+"VEHICULO #"+(x+1)+"\n\n"
                     +"Marca: "+arregloVehiculo[x].getMarca()+"\n"
                     +"Estilo:"+arregloVehiculo[x].getEstilo()+"\n"
                     +"Pais de Origen: "+arregloVehiculo[x].getPaisDeOrigen()+"\n"
                     +"Caracteristicas: "+arregloVehiculo[x].getCaracteristicas()+"\n"
                     +"Estado: "+arregloVehiculo[x].getEstado()+"\n\n";
+            JOptionPane.showMessageDialog(null, "CATALOGO DE VEHICULOS\n\n"+s);
         }
     }
     public void mostrarArregloOpeCli(){
+        JOptionPane.showMessageDialog(null,"CATALOGO DE OPERARIOS / CLIENTES");
         int x;
         String s="";
-        for(x=0;x<arregloOperarioCliente.length;x++){
+        for(x=0;x<arregloOperarioCliente.length;x++,s=""){
             s=s+"OPERARIO / CLIENTE #"+(x+1)+"\n\n"
                     +"Nombre: "+arregloOperarioCliente[x].getNombre()+"\n"
                     +"Apellido: "+arregloOperarioCliente[x].getApellidos()+"\n"
@@ -65,17 +72,19 @@ public class RutinaCatalogos {
                     +"Telefono: "+arregloOperarioCliente[x].getTelefono()+"\n"
                     +"Correo Electronico: "+arregloOperarioCliente[x].getCorreo()+"\n"
                     +"Estado: "+arregloOperarioCliente[x].getEstado()+"\n\n";
+            JOptionPane.showMessageDialog(null, "CATALOGO DE OPERARIOS / CLIENTES\n\n"+s);
         }
     }
     public void mostrarArregloReparacion(){
+        JOptionPane.showMessageDialog(null,"CATALOGO DE REPARACIONES");
         int x;
         String s="";
-        for(x=0;x<arregloReparacion.length;x++){
+        for (x=0;x<arregloReparacion.length;x++,s="") {
             s=s+"REPARACION #"+(x+1)+"\n\n"
                     +"Descripcion: "+arregloReparacion[x].getDescripcion()+"\n"
                     +"Costo: "+arregloReparacion[x].getCosto()+"\n\n";
+            JOptionPane.showMessageDialog(null, "CATALOGO DE REPARACIONES\n\n"+s);
         }
-
     }
 }
 
