@@ -75,6 +75,7 @@ public class RutinaCatalogos {
                     +"Descripcion: "+arregloReparacion[x].getDescripcion()+"\n"
                     +"Costo: "+arregloReparacion[x].getCosto()+"\n\n";
         }
+
     }
 }
 
