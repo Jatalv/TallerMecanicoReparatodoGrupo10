@@ -29,6 +29,35 @@ public class OperarioCliente {
         this.correo=correo;
         this.estado=estado;
 
+    public void leerDatos(){
+        
+        nombre=JOptionPane.showInputDialog(null,
+                "Digite su nombre: ");
+        apellido=JOptionPane.showInputDialog(null,
+                "Digite sus apellidos: ");
+        cuidad=JOptionPane.showInputDialog(null,
+                "Mencione la cuidad donde se encuenta: ");
+        direccion=JOptionPane.showInputDialog(null,
+                "Indiquenos su direccion exacta: ");
+        telefono=Long.parseLong
+        tipo=JOptionPane.showInputDialog(null,"Digite 'o' para operario o 'c' para cliente").charAt(0);
+        if ((tipo!='c')||(tipo!='o')){
+        estado=JOptionPane.showInputDialog(null,"Error!\nDigite 'o' para operario o 'c' para cliente").charAt(0);  
+        } 
+        if (tipo=='c'){
+            tipoFinal="Cliente";
+        }else{
+            tipoFinal="Operario";
+        } 
+        estado=JOptionPane.showInputDialog(null,"Digite 'a' para activo o 'i' para inactivo").charAt(0);
+        if ((tipo!='a')||(tipo!='i')){
+            estado=JOptionPane.showInputDialog(null,"Error!\nDigite 'a' para activo o 'i' para inactivo").charAt(0);
+        }
+        if (estado=='a'){
+            estadoFinal="Activo";
+        }else{
+            estadoFinal="Inactivo";
+        }
     }
 
     public String getNombre() {
