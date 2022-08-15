@@ -15,18 +15,22 @@ public class MenuPrincipal {
             switch (mod1) {
                 case 1: {
                     mostrarModuloUsuarios();
+                    mod2=0;
                     break;
                 }
                 case 2: {
                     mostrarModuloCatalogos();
+                    mod3=0;
                     break;
                 }
                 case 3: {
                     mostrarModuloFacturas();
+                    mod4=0;
                     break;
                 }
                 case 4: {
                     mostarModuloCajas();
+                    mod5=0;
                     break;
                 }
                 case 5: {
