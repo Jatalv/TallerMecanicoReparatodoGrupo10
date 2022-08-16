@@ -1,0 +1,125 @@
+package proyectog10;
+
+public class Usuarios {
+  private String nombre;
+  private String apellido01;
+  private String apellido02;
+  private long cedula;
+  private int numero;
+  private String correo;
+  private String usuario;
+  private String password;
+  private char tipo;
+  private char estado;
+  
+  public Usuarios(){
+      this.nombre="";
+      this.apellido01="";
+      this.apellido02="";
+      this.cedula=0;
+      this.numero=0;
+      this.correo="";
+      this.usuario= "";
+      this.password= "";
+      this.tipo=0;
+      this.estado=0;
+    }
+      
+  public Usuarios(String nombre,String apellido01,String apellido02,long cedula,int numero,String correo, String usuario,String password,char tipo, char estado ){
+      this.nombre=nombre;
+      this.apellido01=apellido01;
+      this.apellido02=apellido02;
+      this.cedula=cedula;
+      this.numero=numero;
+      this.usuario= usuario;
+      this.password= password;
+      this.tipo=tipo;
+      this.estado=estado;    
+  }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido01() {
+        return apellido01;
+    }
+
+    public void setApellido01(String apellido01) {
+        this.apellido01 = apellido01;
+    }
+
+    public String getApellido02() {
+        return apellido02;
+    }
+
+    public void setApellido02(String apellido02) {
+        this.apellido02 = apellido02;
+    }
+
+    public long getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(long cedula) {
+        this.cedula = cedula;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public char getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(char tipo) {
+        this.tipo = tipo;
+    }
+
+    public char getEstado() {
+        return estado;
+    }
+
+    public void setEstado(char estado) {
+        this.estado = estado;
+    }
+  
+  
+  
+  
+  
+  
+}
