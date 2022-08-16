@@ -1,0 +1,11 @@
+package proyectog10;
+
+public class Main {
+
+    public static void main(String[] args) {
+      RutinaUsuarios r = new RutinaUsuarios();
+      r.leerDatos();
+      r.mostrarDatos();
+    }
+    
+}
