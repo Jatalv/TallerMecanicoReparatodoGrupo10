@@ -18,10 +18,10 @@ public class Vehiculo {
         public Vehiculo(String marca, String estilo, String paisDeOrigen, String caracteristicas, String estado)
         {
 
-            this.marca="";
-            this.estilo="";
-            this.paisDeOrigen="";
-            this.caracteristicas="";
+            this.marca=marca;
+            this.estilo=estilo;
+            this.paisDeOrigen=paisDeOrigen;
+            this.caracteristicas=caracteristicas;
             this.estado=estado;
 
         }
