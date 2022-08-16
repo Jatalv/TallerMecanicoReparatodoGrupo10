@@ -1,0 +1,38 @@
+
+package proyectog10;
+import javax.swing.JOptionPane;
+public class RutinaUsuarios {
+    Usuarios u = new Usuarios();
+    
+    public void leerDatos(){
+        JOptionPane.showMessageDialog(null,
+                "****Bienvenido****\n\n"+"Complete los datos necesarios.");
+        u.setNombre(JOptionPane.showInputDialog(null,
+                "Ingrese su nombre: "));
+        u.setApellido01(JOptionPane.showInputDialog(null,
+                "Ingrese su primer apellido: "));
+        u.setApellido02(JOptionPane.showInputDialog(null,
+                "Ingrese su segundo apellido: "));
+        u.setCedula(Long.parseLong(JOptionPane.showInputDialog(null,
+                "Digite su numero de cedula: ")));
+        u.setNumero(Integer.parseInt(JOptionPane.showInputDialog(null,
+                "Ingrese su numero telefonico: ")));
+        u.setCorreo(JOptionPane.showInputDialog(null,
+                "Ingrese su correo electronico: "));
+        u.setUsuario(JOptionPane.showInputDialog(null,
+                "Ingrese un nombre de usuario: "));
+        u.setPassword(JOptionPane.showInputDialog(null,
+                "Establesca una contaseña: "));
+    }
+    public void mostrarDatos (){
+        JOptionPane.showMessageDialog(null,"***DATOS CLIENTE***\n\n"
+                +"Nombre: "+u.getNombre()+"\n"
+                +"Apellidos: "+u.getApellido01()+u.getApellido02()+"\n"
+                +"Cedula: "+u.getCedula()+"\n"
+                +"Numero telefonico: "+u.getNumero()+"\n"
+                +"Correo Electronico: "+u.getCorreo()+"\n");
+                
+        
+    }  
+    
+}
